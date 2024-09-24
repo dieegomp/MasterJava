@@ -1,0 +1,73 @@
+package com.viewnext.ej1;
+
+import com.viewnext.ej1.dto.Equipo;
+import com.viewnext.ej1.dto.Jugador;
+import com.viewnext.ej1.dto.Liga;
+import com.viewnext.ej1.dto.Partido;
+
+public class Main{
+public static void main (String args[]){
+	Liga liga = new Liga();
+	
+	Equipo e1 = new Equipo("Real Madrid C.F");
+	Equipo e2 = new Equipo("C.F Barcelona");
+	Equipo e3 = new Equipo("Real Betis");
+	Equipo e4 = new Equipo("Villareal C.F");
+	
+	e1.annadeJugador(new Jugador("Juan"));
+	e1.annadeJugador(new Jugador("Marcos"));
+	e2.annadeJugador(new Jugador("Pedro"));
+	e2.annadeJugador(new Jugador("David"));
+	e3.annadeJugador(new Jugador("Qerty"));
+	e3.annadeJugador(new Jugador("Pablo"));
+	e4.annadeJugador(new Jugador("Timo"));
+	e4.annadeJugador(new Jugador("Vali"));
+	
+	liga.addEquipo(e1);
+	liga.addEquipo(e2);
+	liga.addEquipo(e3);
+	liga.addEquipo(e4);
+	
+	Partido partido = new Partido(e1,e2);
+	Partido partido2 = new Partido(e3,e4);
+	Partido partido3 = new Partido(e1,e3);
+	Partido partido4 = new Partido(e2,e4);
+	
+	e1.jugadoresPorGoles().get(0).masGoles(1);
+	e1.jugadoresPorGoles().get(1).masGoles(3);
+	e2.jugadoresPorGoles().get(0).masGoles(1);
+	e2.jugadoresPorGoles().get(1).masGoles(0);
+	e3.jugadoresPorGoles().get(0).masGoles(1);
+	e3.jugadoresPorGoles().get(1).masGoles(2);
+	e4.jugadoresPorGoles().get(0).masGoles(0);
+	e4.jugadoresPorGoles().get(1).masGoles(0);
+	
+	partido.proceso_Resultado(3,1);
+	liga.addPartido(partido);
+	partido2.proceso_Resultado(3,2);
+	liga.addPartido(partido2);
+	partido3.proceso_Resultado(5,0);
+	liga.addPartido(partido3);
+	partido4.proceso_Resultado(0,1);
+	liga.addPartido(partido4);
+	
+	
+	System.out.println();
+	for(Partido p: liga.Partidos()){
+		System.out.println(p.resultadoFinal());
+	}
+	
+	System.out.println();
+	for(Equipo e: liga.equiposPartidosGanados()){
+		System.out.println(e.getNombre()+"- Partidos Ganados  "+e.getPGanados());
+	}
+	
+	System.out.println("1");
+	for(Jugador j: liga.jugadoresPorGoles()){
+		System.out.println("2");
+		System.out.println(j.getNombre()+"- Nº Goles - "+j.getGMarcados());
+		System.out.println("3");
+	}
+	}
+}
+ 

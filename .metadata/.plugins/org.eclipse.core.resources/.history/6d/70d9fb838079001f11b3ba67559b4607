@@ -1,0 +1,12 @@
+package com.viewnext.main;
+
+import com.viewnext.modelo.Cuenta;
+
+public class Main {
+	public static void main(String[] args) {
+		Cuenta cuenta1 = new Cuenta("Jesus Rodrigez", 234.5);
+		Cuenta cuenta2 = new Cuenta("pedro Rodrigez", 2340);
+		cuenta1.ingresar(-5);
+		cuenta2.retirar(-340);
+	}
+}

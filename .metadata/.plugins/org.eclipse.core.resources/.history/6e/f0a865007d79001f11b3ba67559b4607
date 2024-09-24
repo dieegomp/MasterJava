@@ -1,0 +1,21 @@
+package com.viewnext.dto;
+
+public class Moviles extends Productos {
+	
+public Moviles(int codigoDeProducto, String modelo, int precio, int stock) {
+		super(codigoDeProducto, modelo, precio, stock);
+		// TODO Auto-generated constructor stub
+	}
+
+private String operador;
+
+
+public String getOperador() {
+	return operador;
+}
+
+public void setOperador(String operador) {
+	this.operador = operador;
+}
+
+}

@@ -1,0 +1,31 @@
+package com.viewnext.ej1.dto;
+
+class Jugador {
+		private String nombre;
+		private int gMarcados;
+		
+		public Jugador(String nombre) {
+			this.nombre=nombre;
+			this.gMarcados=0;
+		}
+
+		public String getNombre() {
+			return nombre;
+		}
+
+		public void setNombre(String nombre) {
+			this.nombre = nombre;
+		}
+
+		public int getGMarcados() {
+			return gMarcados;
+		}
+
+		public void setGMarcados(int gMarcados) {
+			this.gMarcados = gMarcados;
+		}
+		
+		public void masGoles(int goles){
+			this.gMarcados+=goles;
+		}
+}

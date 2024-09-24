@@ -1,0 +1,70 @@
+package com.viewnext.ej1;
+
+import com.viewnext.ej1.dto.Equipo;
+import com.viewnext.ej1.dto.Jugador;
+import com.viewnext.ej1.dto.Liga;
+import com.viewnext.ej1.dto.Partido;
+
+public class Main{
+public static void main (String args[]){
+	Liga liga = new Liga();
+	
+	Equipo equipo1 = new Equipo("atletico varillas");
+	Equipo equipo2 = new Equipo("atletico del madrid");
+	Equipo equipo3 = new Equipo("atleti de bilbao");
+	Equipo equipo4 = new Equipo("getafe");
+	
+	equipo1.addJugador(new Jugador("carlos"));
+	equipo1.addJugador(new Jugador("juan"));
+	equipo2.addJugador(new Jugador("jesus"));
+	equipo2.addJugador(new Jugador("daniel"));
+	equipo3.addJugador(new Jugador("david"));
+	equipo3.addJugador(new Jugador("Pablo"));
+	equipo4.addJugador(new Jugador("jesus"));
+	equipo4.addJugador(new Jugador("manuel"));
+	
+	liga.addEquipo(equipo1);
+	liga.addEquipo(equipo2);
+	liga.addEquipo(equipo3);
+	liga.addEquipo(equipo4);
+	
+	Partido partido = new Partido(equipo1,equipo2);
+	Partido partido2 = new Partido(equipo3,equipo4);
+	Partido partido3 = new Partido(equipo2,equipo3);
+	Partido partido4 = new Partido(equipo1,equipo4);
+	
+	e1.jugadoresPorGoles().get(0).masGoles(1);
+	e1.jugadoresPorGoles().get(1).masGoles(3);
+	e2.jugadoresPorGoles().get(0).masGoles(1);
+	e2.jugadoresPorGoles().get(1).masGoles(0);
+	e3.jugadoresPorGoles().get(0).masGoles(1);
+	e3.jugadoresPorGoles().get(1).masGoles(2);
+	e4.jugadoresPorGoles().get(0).masGoles(0);
+	e4.jugadoresPorGoles().get(1).masGoles(0);
+	
+	partido.proceso_Resultado(3,1);
+	liga.addPartido(partido);
+	partido2.proceso_Resultado(3,2);
+	liga.addPartido(partido2);
+	partido3.proceso_Resultado(5,0);
+	liga.addPartido(partido3);
+	partido4.proceso_Resultado(0,1);
+	liga.addPartido(partido4);
+	
+	
+	System.out.println();
+	for(Partido p: liga.Partidos()){
+		System.out.println(p.resultadoFinal());
+	}
+	
+	System.out.println();
+	for(Equipo e: liga.equiposPartidosGanados()){
+		System.out.println(e.getNombre()+" Partidos Ganados: "+e.getPGanados());
+	}
+	
+	for(Jugador j: liga.jugadoresPorGoles()){
+		System.out.println(j.getNombre()+" Nº Goles:  "+j.getGMarcados());
+	}
+	}
+}
+ 

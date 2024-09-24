@@ -1,0 +1,8 @@
+package com.viewnext.main;
+import com.viewnext.modelo.Cafetera;
+public class Main {
+public static void main(String[]args){
+	servirTaza();
+	System.out.println(getC);
+}
+}

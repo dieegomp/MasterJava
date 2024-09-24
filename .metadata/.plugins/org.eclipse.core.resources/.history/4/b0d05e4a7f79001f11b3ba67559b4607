@@ -1,0 +1,9 @@
+package com.viewnext.main;
+
+import com.viewnext.modelo.Cuenta;
+
+public class Main {
+	public static void main(String[] args) {
+		Cuenta cuanta1 = new Cuenta("Jesus Rodrigez", 234.5);
+	}
+}

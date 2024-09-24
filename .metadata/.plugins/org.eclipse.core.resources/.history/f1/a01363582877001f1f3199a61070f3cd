@@ -1,0 +1,38 @@
+package com.viewnext.ejemplo2;
+
+public class Libro {
+public int isbn;
+public String titulo;
+public String autor;
+public int numeroPaginas;
+public Libro() {
+}
+public Libro(int isbn) {
+	this.isbn = isbn;
+}
+public int getIsbn() {
+	return isbn;
+}
+public void setIsbn(int isbn) {
+	this.isbn = isbn;
+}
+public String getTitulo() {
+	return titulo;
+}
+public void setTitulo(String titulo) {
+	this.titulo = titulo;
+}
+public String getAutor() {
+	return autor;
+}
+public void setAutor(String autor) {
+	this.autor = autor;
+}
+public int getNumeroPaginas() {
+	return numeroPaginas;
+}
+public void setNumeroPaginas(int numeroPaginas) {
+	this.numeroPaginas = numeroPaginas;
+}
+
+}

@@ -1,0 +1,5 @@
+package com.viewnext.dto;
+
+public class Moviles extends Productos {
+private String operador;
+}

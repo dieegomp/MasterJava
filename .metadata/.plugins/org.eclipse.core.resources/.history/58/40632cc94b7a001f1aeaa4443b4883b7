@@ -1,0 +1,30 @@
+package com.viewnext.ej1.dto;
+
+public class Partido {
+	private Equipo eLocal;
+	private Equipo eVisitante;
+	private int g_local;  
+	private int g_visitante;  
+	
+	public Partido(Equipo e_local, Equipo e_visitante) {
+		this.eLocal=e_local;
+		this.eVisitante=e_visitante;
+	}
+	
+	public void proceso_Resultado(int g_local, int g_visitante) {
+		this.g_local=g_local;
+		this.g_visitante=g_visitante;
+		
+		if(g_local>g_visitante) {
+			eLocal.pGanados(g_local);	
+		}
+		else if (g_visitante>g_local) {
+			eVisitante.pGanados(g_visitante); 
+		}
+	}
+		
+	public String resultadoFinal() {
+		return eLocal.getNombre()+" "+g_local+"-"+g_visitante+" "+eVisitante.getNombre();
+	}
+		
+}

@@ -1,0 +1,6 @@
+1727165110840	Rename field 'e_local'
+1727165118277	Rename field 'e_visitante'
+1727165138813	Rename field 'g_local'
+1727165152782	Rename field 'g_visitante'
+1727165238477	Rename local variable 'gVisitante'
+1727165249312	Rename local variable 'gLocal'
