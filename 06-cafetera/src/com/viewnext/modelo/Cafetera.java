@@ -44,14 +44,13 @@ public class Cafetera {
 		System.out.println("La cafetera se ha rellenado");
 	}
 
-	public  void servirTaza() {
-		int tazaCafe = 30;
+	public  void servirTaza(int tazaCafe) {
 		if (capacidadActual >= tazaCafe) {
 			capacidadActual -= tazaCafe;
-			System.out.println("La cafetera tiene actualmente: " + capacidadActual + "g de cafe");
+			System.out.println("te he servido una taza de: " + tazaCafe + "g de cafe y quedan actualmente en la cafetera: "+ capacidadActual);
 		} else {
-			capacidadActual = 0;
 			System.out.println("La taza se ha servido con los ultimos granos de cafe");
+			capacidadActual = 0;
 		}
 	}
 
