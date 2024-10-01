@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.viewnext.ej7.dto.Instrumento"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.viewnext.ej9.interfaces.Mascota"/>
+    <fullyQualifiedTypeName name="com.viewnext.ej9.modelo.Animales"/>
+    <fullyQualifiedTypeName name="com.viewnext.interfaz.Conducible"/>
+    <fullyQualifiedTypeName name="com.viewnext.vehiculos.Coche"/>
+    <fullyQualifiedTypeName name="java.time.Duration"/>
+</qualifiedTypeNameHistroy>

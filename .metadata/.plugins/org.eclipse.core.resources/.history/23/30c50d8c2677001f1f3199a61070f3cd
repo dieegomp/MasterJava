@@ -1,8 +1,0 @@
-package com.viewnext.ejercicio4;
-
-public class Libro {
-public int isbn;
-public String titulo;
-public String autor;
-public int numeroPaginas;
-}

@@ -1,7 +1,7 @@
 package com.viewnext.ej7.dto;
 
 public class Tambor extends Instrumento {
-private String tamaño;
+private String tamanho;
 
 public Tambor() {
 	super();
@@ -9,23 +9,23 @@ public Tambor() {
 
 public Tambor(String tamaño) {
 	super();
-	this.tamaño = tamaño;
+	this.tamanho = tamaño;
 }
 
 public Tambor(String nombre, String tipo,String tamaño) {
 	super(nombre, tipo);
-	this.tamaño = tamaño;
+	this.tamanho = tamaño;
 	// TODO Auto-generated constructor stub
 }
 
 public String getTamaño() {
-	return tamaño;
+	return tamanho;
 }
 
 public void setTamaño(String tamaño) {
-	this.tamaño = tamaño;
+	this.tamanho = tamaño;
 }
 public void aporrear() {
-	System.out.println("Aporreando tambor " + nombre);
+	System.out.println("Aporreando " + nombre);
 }
 }

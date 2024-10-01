@@ -1,6 +1,6 @@
 package com.viewnext.ej7.dto;
 
-public class Instrumento {
+public abstract class Instrumento {
 protected String nombre;
 protected String tipo;
 
@@ -33,6 +33,6 @@ public void tocar(){
 	System.out.println("Tocando el instrumento "+ nombre);
 }
 public void afinar(){
-	System.out.println("Afinando el instrumento"+ nombre);
+	System.out.println("Afinando el "+ nombre);
 }
 }

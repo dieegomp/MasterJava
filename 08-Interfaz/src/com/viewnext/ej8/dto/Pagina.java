@@ -1,5 +1,7 @@
 package com.viewnext.ej8.dto;
 
+import com.viewnext.ej8.interfaz.Imprimible;
+
 public class Pagina implements Imprimible {
 private int nPagina;
 private int nLineas;

@@ -1,7 +1,9 @@
 package com.viewnext.ej8;
 
 import com.viewnext.ej8.dto.*;
-
+/*
+ * @
+ */
 public class GestionDeImpresion {
 public static void main (String[]args) {
 	Pagina p1 = new Pagina(4,67);
