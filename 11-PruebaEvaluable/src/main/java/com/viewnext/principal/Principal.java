@@ -10,9 +10,12 @@ public class Principal {
 	
 public static void main(String[] args) {
 	Coche coche = new Coche("saf","fsdf");
-	coche.Conducir();
+	coche.conducir();
 	coche.avanzar(12, 30.9);
 	coche.avanzar(350, 120);
-	coche.Parar();
+	coche.avanzar(350, 120);
+	coche.avanzar(350, 120);
+	coche.avanzar(350, 120);
+	coche.parar();
 }
 }

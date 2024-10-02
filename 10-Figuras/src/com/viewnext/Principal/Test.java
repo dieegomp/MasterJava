@@ -13,6 +13,7 @@ public class Test {
 		Circulo c1 = new Circulo(25);
 		Cuadrado cu1 = new Cuadrado(2);
 		Rectangulo r1 = new Rectangulo(13,7);
+//		Rectangulo r2 = new Rectangulo(15,14);
 		
 		System.out.println("Con una clase");
 		c1.calcularArea();

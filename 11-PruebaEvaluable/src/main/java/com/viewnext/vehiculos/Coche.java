@@ -24,7 +24,7 @@ public class Coche extends Vehiculo implements Conducible {
     }
 
     @Override
-    public void Conducir() {
+    public void conducir() {
         inicioConduccion = LocalTime.now();
         System.out.println("La conducción ha comenzado a las " + inicioConduccion.getHour() + ":" + inicioConduccion.getMinute());
     }
@@ -33,14 +33,14 @@ public class Coche extends Vehiculo implements Conducible {
     public double  avanzar(int kmAvanzados, double velocidad) {
         double tiempoEnHoras = kmAvanzados / velocidad;
         tiempoEnMinutos = (long) (tiempoEnHoras * 60);
-        System.out.println("Has avanzado en coche" + kmAvanzados + " km en " + tiempoEnMinutos + " minutos a "+ velocidad+" Km/h" );
+        System.out.println("Has avanzado en coche " + kmAvanzados + " km en " + tiempoEnMinutos + " minutos a "+ velocidad+" Km/h" );
         tiempoTotal += tiempoEnMinutos;
         return tiempoEnMinutos;
     }
 
 
     @Override
-    public void Parar() {
+    public void parar() {
     	 LocalTime finConduccion = inicioConduccion.plusMinutes(tiempoTotal);
     	    System.out.println("La conducción ha finalizado a las " + finConduccion.getHour() + ":" + finConduccion.getMinute());
     }

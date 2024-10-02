@@ -5,7 +5,7 @@ package com.viewnext.interfaz;
  * @version 1.0 27/09/2024
  */
 public interface Conducible {
-void Conducir();
+void conducir();
 double avanzar(int metrosAvanzados, double velocidad);
-void Parar();
+void parar();
 }

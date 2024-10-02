@@ -30,16 +30,18 @@ public void setAncho(double ancho) {
 	this.ancho = ancho;
 }
 @Override
-public void calcularArea() {
+public double calcularArea() {
 	double resultado;
 	resultado = longitud *ancho;
 	System.out.println("El area del rectangulo es: " + resultado);
+	return resultado;
 }
 @Override
-public void calcularPerimetro() {
+public double calcularPerimetro() {
 	double resultado;
 	resultado = (2*longitud) + (2*ancho);
 	System.out.println("El perimetro del rectangulo es: " + resultado);
+	return resultado;
 }
 
 }

@@ -25,17 +25,19 @@ public void setDiametro(double diametro) {
 }
 
 @Override
-public void calcularArea() {
+public double calcularArea() {
 	double resultado;
 	resultado = PI*((this.diametro/2) *(this.diametro/2));
 	System.out.println("El area del circulo es: " + resultado);
+	return resultado;
 }
 
 @Override
-public void calcularPerimetro() {
+public double calcularPerimetro() {
 	double resultado;
 	resultado = PI*this.diametro;
 	System.out.println("El perimetro del circulo es: " + resultado);
+	return resultado;
 }
 
 }

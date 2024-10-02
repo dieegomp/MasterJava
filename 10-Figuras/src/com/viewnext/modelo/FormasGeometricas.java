@@ -1,10 +1,7 @@
 package com.viewnext.modelo;
 
 public  abstract class FormasGeometricas {
-public void calcularArea() {
-	
-}
-public void calcularPerimetro() {
-	
-}
+public abstract double calcularArea();
+public abstract double calcularPerimetro(); 
+
 }

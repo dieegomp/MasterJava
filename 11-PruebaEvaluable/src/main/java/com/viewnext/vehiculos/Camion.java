@@ -3,6 +3,7 @@ package com.viewnext.vehiculos;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
+
 import com.viewnext.interfaz.Conducible;
 import com.viewnext.modelo.Vehiculo;
 
@@ -32,7 +33,7 @@ public class Camion extends Vehiculo implements Conducible {
 	}
 
 	@Override
-	public void Conducir() {
+	public void conducir() {
 		inicioConduccion = LocalTime.now();
 		System.out.println(
 				"La conducción ha comenzado a las " + inicioConduccion.getHour() + ":" + inicioConduccion.getMinute());
@@ -43,7 +44,7 @@ public class Camion extends Vehiculo implements Conducible {
 		if ( velocidad < 100.0) {
 		double tiempoEnHoras = kmAvanzados / velocidad;
 		tiempoEnMinutos = (long) (tiempoEnHoras * 60);
-		System.out.println("Has avanzado  en camion" + kmAvanzados + " km en " + tiempoEnMinutos + " minutos a " + velocidad + " Km/h");
+		System.out.println("Has avanzado  en camion " + kmAvanzados + " km en " + tiempoEnMinutos + " minutos a " + velocidad + " Km/h");
 		tiempoTotal += tiempoEnMinutos;
 		tacografo.add(velocidad);
 		}else {
@@ -59,7 +60,7 @@ public class Camion extends Vehiculo implements Conducible {
 	}
 
 	@Override
-	public void Parar() {
+	public void parar() {
 		LocalTime finConduccion = inicioConduccion.plusMinutes(tiempoTotal);
 		System.out.println(
 				"La conducción ha finalizado a las " + finConduccion.getHour() + ":" + finConduccion.getMinute());
