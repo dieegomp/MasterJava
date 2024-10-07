@@ -1,16 +1,15 @@
 package com.viewnext.vehiculos;
 import java.time.LocalTime;
 
-import com.viewnext.interfaz.Conducible;
 import com.viewnext.modelo.Vehiculo;
 /** 
  * Clase Coche
  * @author Diego Martin    Viewnext/Master
  * @version 1.0 27/09/2024
  */
-public class Coche extends Vehiculo implements Conducible {
+public class Coche extends Vehiculo  {
 
-    private final static int ruedas = 4;
+    private final static int RUEDAS = 4;
     private LocalTime inicioConduccion;
     private long tiempoEnMinutos;
     private long tiempoTotal;
@@ -20,7 +19,7 @@ public class Coche extends Vehiculo implements Conducible {
     }
 
     public static int getRuedas() {
-        return ruedas;
+        return RUEDAS;
     }
 
     @Override

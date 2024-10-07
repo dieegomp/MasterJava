@@ -4,7 +4,6 @@ import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.viewnext.interfaz.Conducible;
 import com.viewnext.modelo.Vehiculo;
 
 /** 
@@ -12,9 +11,9 @@ import com.viewnext.modelo.Vehiculo;
  * @author Diego Martin    Viewnext/Master
  * @version 1.0 27/09/2024
  */
-public class Camion extends Vehiculo implements Conducible {
+public class Camion extends Vehiculo  {
 
-	private final static int ruedas = 4;
+	private final static int RUEDAS = 4;
 	private LocalTime inicioConduccion;
 	private long tiempoEnMinutos;
 	private long tiempoTotal;
@@ -25,7 +24,7 @@ public class Camion extends Vehiculo implements Conducible {
 	}
 
 	public static int getRuedas() {
-		return ruedas;
+		return RUEDAS;
 	}
 
 	public List<Double> getTacografo() {

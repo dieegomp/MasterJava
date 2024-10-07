@@ -18,7 +18,7 @@ class PeTest {
 	}
 	@Test
 	void avanzarCamionTest() {
-		Camion ca1 = new Camion("3456 HJH", "verde");
+		Camion ca1 = new Camion("3456 PJH", "amarillo");
 		double tiempo = ca1.avanzar(12, 60);
 		assertEquals(12.0, tiempo);
 		

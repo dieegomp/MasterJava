@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form</title>
+</head>
+<body>
+<form action="Servlet01" method="post">
+		  
+		 <input type="number" placeholder="Dime un numero" name="n1"> <br> <input type="submit"><br>
+</form>
+</body>
+</html>

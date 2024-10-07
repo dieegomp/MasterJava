@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form</title>
+</head>
+<body>
+<form action="Servlet02" method="post">
+		  
+		 <input type="text" placeholder="Dime un numero" name="edad"><br> <input type="submit"><br>
+</form>
+</body>
+</html>

@@ -1,6 +1,7 @@
 package com.viewnext.ej7.dto;
 
 public class Guitarra extends Instrumento {
+
 	private int numeroCuerdas;
 
 	public Guitarra() {

@@ -1,0 +1,9 @@
+out.println("<!DOCTYPE html>");
+out.println("<html>");
+out.println("<head>");
+out.println("<meta charset="utf-8">");
+out.println("<title>Plantilla</title>");
+out.println("</head>");
+out.println("<body>");
+out.println("</body>");
+out.println("</html>");

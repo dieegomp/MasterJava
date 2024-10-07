@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Prueba</title>
+</head>
+<body>
+	<h1>HOlA MUNDO</h1>
+	<script>
+		alert("se acabooo")
+		let numero = prompt("escribe un numero y tedigo si es par o impar");
+		if (numero % 2 == 0) {
+			document.write("el numero es par");
+		} else {
+			document.write("el numero es par");
+		}
+	</script>
+</body>
+</html>

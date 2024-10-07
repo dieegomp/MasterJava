@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej1</title>
+</head>
+<body>
+    <script>
+    elevar();
+    function elevar(){
+        let resultado = 1 ;
+        let base = prompt("dime una base para elevarla: ");
+        let exponente = prompt("dime un exponente para la base: ");
+        resultado = base ** exponente
+   /*     if(base>=0 && exponente>=0){
+        for(i= 1 ; i <= exponente; i++){
+            resultado *= base
+        }}else{
+        	resultado = base ** exponente
+        }*/
+        
+        document.write("El resultado es :" + resultado);
+    }
+	</script>
+</body>
+</html>

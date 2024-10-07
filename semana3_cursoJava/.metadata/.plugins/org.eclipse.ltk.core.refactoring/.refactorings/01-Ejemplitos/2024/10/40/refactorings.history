@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.viewnext.java.Servlet02&apos; to &apos;Servelt02&apos;&#x0D;&#x0A;- Original project: &apos;01-Ejemplitos&apos;&#x0D;&#x0A;- Original element: &apos;com.viewnext.java.Servlet02&apos;&#x0D;&#x0A;- Renamed element: &apos;com.viewnext.java.Servelt02&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Servlet02&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.viewnext.java{Servlet02.java[Servlet02" matchStrategy="1" name="Servelt02" qualified="false" references="true" similarDeclarations="false" stamp="1728039842743" textual="false" version="1.0"/>
+</session>

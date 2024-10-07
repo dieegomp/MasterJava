@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Prueba</title>
+</head>
+<body>
+<h1>HOlA MUNDO</h1>
+<script >
+alert("se acabooo")
+</script>
+</body>
+</html>

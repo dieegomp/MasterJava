@@ -1,10 +1,13 @@
 package com.viewnext.modelo;
+
+import com.viewnext.interfaz.Conducible;
+
 /** 
  * Clase Vehiculo
  * @author Diego Martin    Viewnext/Master
  * @version 1.0 27/09/2024
  */
-public abstract class Vehiculo {
+public abstract class Vehiculo implements Conducible {
 protected final String MATRICULA;
 protected String color;
 
